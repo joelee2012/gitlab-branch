@@ -4,6 +4,7 @@ import logging
 from pprint import pformat
 
 from gitlab import Gitlab
+from .__version__ import __version__
 
 
 logging.basicConfig(level=logging.INFO,
@@ -54,6 +55,9 @@ def main():
 
     parser = argparse.ArgumentParser(
         description='manage branch for gitlab project')
+    parser.add_argument(
+        '-V', '--version', action='version', version=__version__)
+
     sub_parser = parser.add_subparsers(
         required=True, dest='sub-command', description="the following commands are supported")
     create_parser = sub_parser.add_parser(

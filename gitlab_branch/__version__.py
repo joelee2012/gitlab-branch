@@ -1,5 +1,5 @@
 # encoding: utf-8
-__version__ = '1.0'
+__version__ = '0.1'
 __title__ = 'gitlab-branch'
 __description__ = 'Mange gitlab branch'
 __url__ = 'https://github.com/joelee2012/gitlab-branch'
